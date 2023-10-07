@@ -1,1 +1,82 @@
 /* Hero image by David Marcu on Unsplash -> https://unsplash.com/photos/78A265wPiO4  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "AR One Sans", sans-serif;
+}
+
+/* Beginning of Header */
+
+header {
+  background-color: #45b159;
+  padding: 1.75% 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  padding-left: 15px;
+}
+
+header img {
+  margin-right: -15px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.light-text {
+  font-weight: 200;
+}
+
+/* * Beginning of Hero */
+
+.hero {
+  background-image: url(../assets/hero-image.jpg);
+  background-position: 59% 69%;
+  padding: 20% 0%;
+  max-height: 10%;
+  color: #ecfeef;
+  margin: 0 auto;
+}
+
+.hero section {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero-text {
+  background-color: hsla(0, 0%, 12%, 80%);
+  padding: 20px;
+  padding-right: 10%;
+}
+
+.hero section h2 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.hero section p {
+  font-size: 1.2rem;
+}
+
+.bold-heading {
+  font-weight: 600;
+}
