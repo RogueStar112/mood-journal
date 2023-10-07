@@ -120,7 +120,7 @@ h1 {
 
 .name-email {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -221,8 +221,39 @@ h1 {
 
 .contact-section {
   text-align: center;
+  display: grid;
+  grid-template-columns: 20% 1fr 2fr;
 }
 
 #contact-form {
   display: grid;
+  grid-column: 2 / 3;
+  width: 100%;
+}
+
+.input-submit input {
+  width: 100%;
+  height: 100px;
+}
+
+.input-submit label {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-submit button {
+  margin-top: 1rem;
+  width: calc(50% - 55px);
+}
+
+footer {
+  background-color: #45b159;
+  padding: 20px;
+  text-align: center;
 }
