@@ -8,6 +8,22 @@ body {
   font-family: "AR One Sans", sans-serif;
 }
 
+/* Font-Family Styles */
+
+.font-ar-sans {
+  font-family: "AR One Sans", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Font Modifiers */
+
+.fw-bold {
+  font-weight: 600;
+}
+
 /* Beginning of Header */
 
 header {
@@ -40,6 +56,15 @@ h1 {
 
 .light-text {
   font-weight: 200;
+}
+
+#offer-placeholders {
+  gap: 10px;
+}
+
+#offer-placeholders article {
+  padding: 10px;
+  background-color: #89d197;
 }
 
 /* * Beginning of Hero */
@@ -81,6 +106,39 @@ h1 {
   font-weight: 600;
 }
 
+#contact-form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#contact-form input {
+  padding: 10px;
+  /* border-radius: 15px;
+  border: 2px solid black; */
+}
+
+.name-email {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.name-email label,
+.name-email input {
+  display: block;
+}
+
+.name-email label {
+  text-align: left;
+}
+
+/* 
+.name-email label,
+.name-input input {
+  width: min-content;
+} */
+
 /* FLEX SOLUTION */
 
 /* .offers {
@@ -109,8 +167,18 @@ h1 {
   
 } */
 
-.offers {
+.offers,
+.contact-section {
+  background-color: #45b159;
+}
+
+#contact-form {
   background-color: #89d197;
+}
+
+#contact-form h2 {
+  margin: 20px;
+  font-size: 2rem;
 }
 
 .offers-content {
@@ -121,6 +189,11 @@ h1 {
   margin: 4% auto;
   padding: 20px;
   grid-auto-flow: column;
+}
+
+.contact-section {
+  margin: 4% auto;
+  padding: 20px;
 }
 
 #offer-placeholders,
@@ -144,4 +217,12 @@ h1 {
 
 #offer-placeholders article {
   text-align: center;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+#contact-form {
+  display: grid;
 }
