@@ -1,78 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="./JS/app.js" defer></script>
+    <title>MoodCanvas</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./CSS/reset.css">
-  <link rel="stylesheet" href="./CSS/style.css" />
-  <script src="./JS/app.js" defer></script>
-  <title>MoodCanvas</title>
-</head>
+  <body>
+    <header>
+      <h1><span class="light-text">Mood</span>Canvas</h1>
+      <img src="https://place-hold.it/100x50/000/fff" alt="Placeholder Logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Mood Tracker</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <h1><span class="light-text">Mood</span>Canvas</h1>
-    <img src="https://place-hold.it/100x50/000/fff" alt="Placeholder Logo">
-    <nav>
-      <ul>
-        <li><a href="#">Mood Tracker</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <section class="hero">
+        <section class="hero-text">
+          <h2><span class="bold-heading">Mood</span> Tracking Made Easy</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam
+            vitae ullam voluptas sequi non! Esse minima perferendis illum nulla
+            tenetur asperiores sequi veritatis facilis.
+          </p>
+        </section>
+      </section>
 
-  <section class="hero">
-    <section class="hero-text">
-      <h2> <span class="bold-heading">Mood</span> Tracking Made Easy</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam vitae ullam voluptas sequi non! Esse
-        minima
-        perferendis illum nulla tenetur asperiores sequi veritatis facilis.</p>
-    </section>
-  </section>
+      <section class="offers">
+        <section class="offers-content">
+          <article id="offer-h2">
+            <h2>What we offer</h2>
+          </article>
 
-  <section class="offers">
-    <article>
-      <h3>Placeholder</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, aliquid.</p>
-    </article>
-    <article>
-      <h3>Placeholder</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, doloribus!</p>
-    </article>
-    <article>
-      <h3>Placeholder</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, a.</p>
-    </article>
-  </section>
+          <article id="offer-placeholders">
+            <article>
+              <h3>Placeholder</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+                aliquid.
+              </p>
+            </article>
+            <article>
+              <h3>Placeholder</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                doloribus!
+              </p>
+            </article>
+            <article>
+              <h3>Placeholder</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt, a.
+              </p>
+            </article>
+          </article>
+        </section>
+      </section>
 
-  <section class="contact-section">
-    <form id="contact-form">
-      <div class="name-email">
-        <label for="full-name">Full Name:</label>
-        <input type="text" placeholder="John Doe" id="full-name" name="full-name">
+      <section class="contact-section">
+        <form id="contact-form">
+          <div class="name-email">
+            <label for="full-name">Full Name:</label>
+            <input
+              type="text"
+              placeholder="John Doe"
+              id="full-name"
+              name="full-name"
+            />
 
-        <label for="email">Email:</label>
-        <input type="email" placeholder="john.doe@gmail.com" id="email" name="email">
-      </div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              placeholder="john.doe@gmail.com"
+              id="email"
+              name="email"
+            />
+          </div>
 
-      <div class="input-submit">
-        <input type="text" id="comment" name="comment">
-        <button type="submit" form="contact-form" value="submit">Submit</button>
-      </div>
-    </form>
+          <div class="input-submit">
+            <input type="text" id="comment" name="comment" />
+            <button type="submit" form="contact-form" value="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
 
     <footer>
-      <img src="https://place-hold.it/100x50/000/fff" alt="Placeholder Logo">
+      <img src="https://place-hold.it/100x50/000/fff" alt="Placeholder Logo" />
       <p>&copy; 2023 - Demie M. + Fikret A. + Dom B. + Tyler A.</p>
     </footer>
-
-  </section>
-</body>
-
+  </body>
 </html>
