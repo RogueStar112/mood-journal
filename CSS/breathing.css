@@ -1,0 +1,43 @@
+/* colour of breathing circle using green colourscheme */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #89d197;
+}
+
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  width: 300px;
+  height: 25px;
+  margin: 5px 250px;
+}
+
+.breathing {
+  font-size: 4rem;
+  animation: breathe 10s infinite forwards;
+}
+
+@keyframes breathe {
+  50% {
+    transform: scaleX(1.5) scaleY(1.2);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
