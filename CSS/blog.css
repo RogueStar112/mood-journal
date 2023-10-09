@@ -1,0 +1,28 @@
+#author-img {
+  width: 128px;
+  border-radius: 50%;
+}
+
+main {
+  background-color: #89d197;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.author-name {
+  margin-right: auto;
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+
+.post-date {
+  font-size: 1.1rem;
+}
