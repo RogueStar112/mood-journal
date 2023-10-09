@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -289,6 +290,7 @@ h1 {
 
 footer {
   background-color: #45b159;
+  margin-top: 4rem;
 }
 
 .footer-content {
@@ -302,62 +304,6 @@ footer {
 
 footer p {
   padding-left: 25px;
-}
-
-
-/*About us */
-
-.square-container {
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 15px;
-  width: 800px;
-  height: 700px;
-  background-color: #89d197;
-}
-
-.item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 25px;
-  padding: 15px;
-  margin: 40px;
-  background-color: #ecfeef;
-  color: white;
-  font-size: 14px;
-  font-family: inherit;
-  color: black;
-  position: relative;
-  overflow: hidden;
-}
-.hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.item:hover .hover-image {
-  opacity: 1;
-}
-
-.item h3 {
-  display: flex;
-  text-align: center;
-  font-size: 22px;
-  padding: 15px;
-}
-
-footer {
-  margin-top: 4rem;
 }
 
 .footer-content-flex {
@@ -377,10 +323,10 @@ footer {
   color: #1f1f1f;
 }
 /* * Misc */
+
 .blog-post-divider {
   border: 1px solid #45b15985;
   box-shadow: rgba(31, 31, 31, 0.4) 0 1px 10px;
   margin-bottom: 10px;
   width: 85%;
-
 }
