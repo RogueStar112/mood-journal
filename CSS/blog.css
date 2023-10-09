@@ -6,15 +6,20 @@
 main {
   background-color: #89d197;
   border-radius: 10px;
-  margin: 0 auto;
   max-width: 1240px;
+  padding: 0;
+  margin: 0 auto;
+  color: #1f1f1f;
 }
+
+/* ! Blog header */
 
 .author-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 30px;
+  margin-bottom: 50px;
 }
 
 .author-name {
@@ -25,4 +30,12 @@ main {
 
 .post-date {
   font-size: 1.1rem;
+}
+
+/* ! Blog posts */
+
+.blog-title {
+  font-size: 2rem;
+  margin: 15px 0;
+  padding: 0 30px;
 }
