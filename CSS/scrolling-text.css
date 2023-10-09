@@ -1,0 +1,50 @@
+/* body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+} */
+
+@keyframes breathe {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#typed-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#typing-underscore {
+  animation: breathe 2s ease infinite;
+}
+
+#typed-author {
+  text-align: right;
+  animation: appear 2s ease-in;
+}
