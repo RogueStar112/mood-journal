@@ -292,8 +292,6 @@ footer {
 }
 
 .footer-content {
-  max-width: 1240px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -306,8 +304,26 @@ footer p {
   padding-left: 25px;
 }
 
+.footer-content-flex {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social {
+  font-size: 1.5rem;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
 /* * Misc */
-hr {
-  border: 1px solid #ecfeef;
-  box-shadow: rgba(31, 31, 31, 0.2) 0 1px 5px;
+.blog-post-divider {
+  border: 1px solid #45b15985;
+  box-shadow: rgba(31, 31, 31, 0.4) 0 1px 10px;
+  margin-bottom: 10px;
+  width: 85%;
 }
