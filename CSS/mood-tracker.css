@@ -101,7 +101,7 @@ form textarea {
 } */
 
 #form-rating div {
-  margin: 10px;
+  margin: 5px;
   border-radius: 25px;
   box-shadow: 0 0 10px #45b159;
 }
@@ -187,6 +187,7 @@ form textarea {
 #quote-char-upside-down {
   right: 20px;
   bottom: 0px;
+  line-height: 0px;
 }
 
 .mood-tracker-questionnaire {
