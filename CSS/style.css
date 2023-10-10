@@ -224,7 +224,7 @@ h1 {
 .contact-section {
   text-align: center;
   display: grid;
-  grid-template-columns: 20% 1fr 2fr;
+  grid-template-columns: 20% 630px auto;
 }
 
 #contact-form {
