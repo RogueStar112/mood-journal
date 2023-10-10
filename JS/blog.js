@@ -43,21 +43,3 @@ for (i = 0; i < entries.length; i++) {
 
   blogPostsContainer.appendChild(articleContainer);
 }
-
-/*
-
-
-<article class="blog-post"> :)
-          <section class="blog-post-header"> :)
-            <h3 class="blog-title">entries.title</h3>
-            <p class="post-date">
-              <i class="fa-regular fa-calendar"></i> entries.time
-            </p>
-          </section>
-          <hr class="blog-post-divider" />
-          <p class="blog-post">
-            entries.text
-          </p>
-</article>
-
-*/
