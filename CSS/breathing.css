@@ -20,13 +20,27 @@ audio {
 }
 
 .breathing {
-  font-size: 4rem;
-  animation: breathe 10s infinite forwards;
+  margin: 50px auto;
+  background-color: #45d159;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #07831a;
+  animation: breathe 12s infinite forwards;
+}
+
+.breathing::before {
+  content: "Inhale";
+  animation: breathe 6s ease-in-out forwards;
+}
+
+.breathing::after {
+  content: " Exhale";
 }
 
 @keyframes breathe {
   50% {
-    transform: scaleX(1.5) scaleY(1.2);
+    transform: scaleX(1.2) scaleY(1.2);
   }
   100% {
     transform: scaleX(1) scaleY(1);
