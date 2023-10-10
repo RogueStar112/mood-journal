@@ -206,3 +206,59 @@ form textarea {
   justify-content: center;
   margin: 10px;
 }
+
+/* RESPONSIVE CSS: COMMENT OUT IF NECESSARY. */
+/* Created by Demie. 10/10/2023 23:30 */
+
+/* MOBILE */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-content {
+    justify-content: space-around;
+  }
+
+  .header-content img {
+    display: none;
+  }
+
+  .header-content nav {
+    display: none;
+  }
+
+  .mood-tracker {
+    display: flex;
+    max-width: calc(100%) - 20px;
+    flex-direction: column;
+  }
+
+  .quote-decoration {
+    display: none;
+  }
+
+  #typed-text {
+    font-size: 0.8rem;
+  }
+
+  .mood-tracker-quotes {
+    min-height: 36px;
+  }
+
+  .footer-content img,
+  .footer-social {
+    display: none;
+  }
+
+  #mobile-header-content {
+    display: none;
+  }
+}
+
+/* TABLET (HORIZONTAL) / DESKTOP */
+@media only screen and (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+}
