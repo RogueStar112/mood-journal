@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./CSS/mood-tracker.css" />
 
     <script src="./JS/scrolling-text.js" defer></script>
+    <script src="./JS/mood-tracker-form.js" defer></script>
     <title>Document</title>
   </head>
 
@@ -44,7 +45,7 @@
 
     <main>
       <section class="segment mood-tracker-container font-ar-sans">
-        <section class="mood-tracker">
+        <form id="mood-tracker-form" class="mood-tracker">
           <section class="mood-tracker-quotes">
             <span class="quote-decoration" id="quote-char-upside">“</span>
             <span class="quote-decoration" id="quote-char-upside-down">”</span>
@@ -59,14 +60,29 @@
 
           <section class="mood-tracker-questionnaire">
             <p>Questionnaire</p>
-            <form id="form-questionnaire">
+            <section id="form-questionnaire">
+              <label for="questionnaire-text-title">Give a brief title</label>
+              <textarea
+                id="questionnaire-text-title"
+                name="questionnaire-text-title"
+                placeholder="Feeling good / Not feeling great"
+                required
+              ></textarea>
+            </section>
+
+            <section id="form-questionnaire-q2">
               <label for="questionnaire-text">How are you feeling today?</label>
               <textarea
                 id="questionnaire-text"
                 name="questionnaire-text"
                 placeholder="I'm feeling..."
+                required
               ></textarea>
-            </form>
+            </section>
+
+            <section id="status-text">
+              <p>Your <a href="blog.html">post</a> has been submitted.</p>
+            </section>
           </section>
 
           <section class="mood-tracker-rating">
@@ -74,7 +90,7 @@
 
             <p>How do you rate your current day on a scale of 1-5?</p>
 
-            <form id="form-rating">
+            <section id="form-rating">
               <div class="rating-container">
                 <input type="radio" id="rating_1" name="rating" value="1" />
                 <label for="rating_1">1 😭</label>
@@ -99,7 +115,7 @@
                 <input type="radio" id="rating_5" name="rating" value="5" />
                 <label for="rating_5">5 😃</label>
               </div>
-            </form>
+            </section>
 
             <button type="submit" id="form-submit">Submit</button>
           </section>
@@ -107,7 +123,7 @@
           <section class="mood-tracker-help">
             <p>Help</p>
           </section>
-        </section>
+        </form>
       </section>
     </main>
 

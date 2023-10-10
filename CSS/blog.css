@@ -44,6 +44,7 @@ main {
 .blog-post {
   background-color: #ecfeef;
   border-radius: 10px;
+  min-width: 85%;
   max-width: 85%;
   margin: 20px auto;
   padding-bottom: 10px;
