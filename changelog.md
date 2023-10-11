@@ -15,3 +15,5 @@ More work has been put in to the breathing animation to make it more seamless.
 A light/dark toggle is being worked on - currently fixing bugs.
 
 # Changelog - 11/10/23
+
+- Created chart.js to display the data generated in a neat chart at the bottom of the Mood Tracker page, this allows the user to track their mood over a long period of time. Additionally added some CSS editing to center the chart on the page. - Tyler
