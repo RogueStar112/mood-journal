@@ -1,172 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/8b1c90b6bd.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./CSS/reset.css" />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/scrolling-text.css" />
-    <link rel="stylesheet" href="./CSS/mood-tracker.css" />
-    <link rel="stylesheet" href="./CSS/footer.css" />
 
-    <script src="./JS/scrolling-text.js" defer></script>
-    <script src="./JS/mood-tracker-form.js" defer></script>
-    <script src="./JS/mobile-dropdown.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/8b1c90b6bd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./CSS/reset.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="./CSS/scrolling-text.css" />
+  <link rel="stylesheet" href="./CSS/mood-tracker.css" />
+  <link rel="stylesheet" href="./CSS/footer.css" />
 
-    <title>App | MoodCanvas</title>
-  </head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./JS/scrolling-text.js" defer></script>
+  <script src="./JS/mood-tracker-form.js" defer></script>
+  <script src="./JS/mobile-dropdown.js" defer></script>
+  <script src="./JS/chart.js" defer></script>
 
-  <body>
-    <header>
-      <section class="header-content">
-        <a href="./index.html">
-          <h1><span class="light-text">Mood</span>Canvas</h1>
-        </a>
-        <img
-          src="https://place-hold.it/100x50/000/fff"
-          alt="Placeholder Logo"
-        />
-        <nav>
-          <ul>
-            <li><a href="./mood-tracker.html">Mood Tracker</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./about.html">About Us</a></li>
-          </ul>
-        </nav>
+  <title>App | MoodCanvas</title>
+</head>
 
-        <i id="mobile-dropdown-menu" class="mobile-only fa-solid fa-bars"></i>
-      </section>
+<body>
+  <header>
+    <section class="header-content">
+      <a href="./index.html">
+        <h1><span class="light-text">Mood</span>Canvas</h1>
+      </a>
+      <img src="https://place-hold.it/100x50/000/fff" alt="Placeholder Logo" />
+      <nav>
+        <ul>
+          <li><a href="./mood-tracker.html">Mood Tracker</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
 
-      <section
-        id="mobile-header-content"
-        class="mobile-only mobile-header-content /mobile-display"
-      >
-        Test test test
-      </section>
-    </header>
+      <i id="mobile-dropdown-menu" class="mobile-only fa-solid fa-bars"></i>
+    </section>
 
-    <main>
-      <section class="segment mood-tracker-container font-ar-sans">
-        <form id="mood-tracker-form" class="mood-tracker">
-          <section class="mood-tracker-quotes">
-            <span class="quote-decoration" id="quote-char-upside">“</span>
-            <span class="quote-decoration" id="quote-char-upside-down">”</span>
-            <section id="typed-text">
-              With great power, comes great responsibility<span
-                id="typing-underscore"
-                >_</span
-              >
-              <section id="typed-author">- Spiderman</section>
-            </section>
+    <section id="mobile-header-content" class="mobile-only mobile-header-content /mobile-display">
+      Test test test
+    </section>
+  </header>
+
+  <main>
+    <section class="segment mood-tracker-container font-ar-sans">
+      <form id="mood-tracker-form" class="mood-tracker">
+        <section class="mood-tracker-quotes">
+          <span class="quote-decoration" id="quote-char-upside">“</span>
+          <span class="quote-decoration" id="quote-char-upside-down">”</span>
+          <section id="typed-text">
+            With great power, comes great responsibility<span id="typing-underscore">_</span>
+            <section id="typed-author">- Spiderman</section>
           </section>
-
-          <section class="mood-tracker-questionnaire">
-            <p>Questionnaire</p>
-            <section id="form-questionnaire">
-              <label for="questionnaire-text-title">Give a brief title</label>
-              <textarea
-                id="questionnaire-text-title"
-                name="questionnaire-text-title"
-                placeholder="Feeling good / Not feeling great"
-                required
-              ></textarea>
-            </section>
-
-            <section id="form-questionnaire-q2">
-              <label for="questionnaire-text">How are you feeling today?</label>
-              <textarea
-                id="questionnaire-text"
-                name="questionnaire-text"
-                placeholder="I'm feeling..."
-                required
-              ></textarea>
-            </section>
-
-            <section id="status-text">
-              <p>Your <a href="blog.html">post</a> has been submitted.</p>
-            </section>
-          </section>
-
-          <section class="mood-tracker-rating">
-            <!-- <p>Rating</p> -->
-
-            <p>How do you rate your current day on a scale of 1-5?</p>
-
-            <section id="form-rating">
-              <div class="rating-container">
-                <input type="radio" id="rating_1" name="rating" value="1" />
-                <label for="rating_1">1 😭</label>
-              </div>
-
-              <div class="rating-container">
-                <input type="radio" id="rating_2" name="rating" value="2" />
-                <label for="rating_2">2 😔</label>
-              </div>
-
-              <div class="rating-container">
-                <input type="radio" id="rating_3" name="rating" value="3" />
-                <label for="rating_3">3 😐</label>
-              </div>
-
-              <div class="rating-container">
-                <input type="radio" id="rating_4" name="rating" value="4" />
-                <label for="rating_4">4 🙂</label>
-              </div>
-
-              <div class="rating-container">
-                <input type="radio" id="rating_5" name="rating" value="5" />
-                <label for="rating_5">5 😃</label>
-              </div>
-            </section>
-
-            <button type="submit" id="form-submit">Submit</button>
-          </section>
-
-          <section class="mood-tracker-help">
-            <p>Help</p>
-          </section>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <section class="footer-content-flex">
-        <section class="footer-content">
-          <img
-            src="https://place-hold.it/100x50/000/fff"
-            alt="Placeholder Logo"
-          />
-          <p>
-            &copy; 2023 - <i class="fa-solid fa-code"></i> with
-            <i class="fa-solid fa-heart"></i> by Demie M. + Fikret A. + Dom B. +
-            Tyler A.
-          </p>
         </section>
-        <section class="footer-social">
-          <a href="https://github.com/RogueStar112/mood-journal" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://youtu.be/dQw4w9WgXcQ?si=Lz2Pz09BqmnrzVh5"
-            target="_blank"
-            ><i class="fa-brands fa-discord"></i
-          ></a>
+
+        <section class="mood-tracker-questionnaire">
+          <p>Questionnaire</p>
+          <section id="form-questionnaire">
+            <label for="questionnaire-text-title">Give a brief title</label>
+            <textarea id="questionnaire-text-title" name="questionnaire-text-title"
+              placeholder="Feeling good / Not feeling great" required></textarea>
+          </section>
+
+          <section id="form-questionnaire-q2">
+            <label for="questionnaire-text">How are you feeling today?</label>
+            <textarea id="questionnaire-text" name="questionnaire-text" placeholder="I'm feeling..."
+              required></textarea>
+          </section>
+
+          <section id="status-text">
+            <p>Your <a href="blog.html">post</a> has been submitted.</p>
+          </section>
         </section>
+
+        <section class="mood-tracker-rating">
+          <!-- <p>Rating</p> -->
+
+          <p>How do you rate your current day on a scale of 1-5?</p>
+
+          <section id="form-rating">
+            <div class="rating-container">
+              <input type="radio" id="rating_1" name="rating" value="1" />
+              <label for="rating_1">1 😭</label>
+            </div>
+
+            <div class="rating-container">
+              <input type="radio" id="rating_2" name="rating" value="2" />
+              <label for="rating_2">2 😔</label>
+            </div>
+
+            <div class="rating-container">
+              <input type="radio" id="rating_3" name="rating" value="3" />
+              <label for="rating_3">3 😐</label>
+            </div>
+
+            <div class="rating-container">
+              <input type="radio" id="rating_4" name="rating" value="4" />
+              <label for="rating_4">4 🙂</label>
+            </div>
+
+            <div class="rating-container">
+              <input type="radio" id="rating_5" name="rating" value="5" />
+              <label for="rating_5">5 😃</label>
+            </div>
+          </section>
+
+          <button type="submit" id="form-submit">Submit</button>
+        </section>
+
+        <section class="mood-tracker-help">
+          <p>Help</p>
+        </section>
+      </form>
+    </section>
+
+    <section class="chart-area segment font-ar-sans">
+      <canvas id="mood-chart"></canvas>
+    </section>
+
+  </main>
+
+  <footer>
+    <section class="footer-content-flex">
+      <section class="footer-content">
+        <img src="https://place-hold.it/100x50/000/fff" alt="Placeholder Logo" />
+        <p>
+          &copy; 2023 - <i class="fa-solid fa-code"></i> with
+          <i class="fa-solid fa-heart"></i> by Demie M. + Fikret A. + Dom B. +
+          Tyler A.
+        </p>
       </section>
-    </footer>
-  </body>
+      <section class="footer-social">
+        <a href="https://github.com/RogueStar112/mood-journal" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=Lz2Pz09BqmnrzVh5" target="_blank"><i
+            class="fa-brands fa-discord"></i></a>
+      </section>
+    </section>
+  </footer>
+</body>
+
 </html>
