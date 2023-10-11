@@ -26,6 +26,22 @@ formSubmitBtn.addEventListener("click", function (e) {
   let date = currentTime.getDate();
   let month = currentTime.getMonth() + 1;
 
+  if (minutes < 10) {
+    minutesList = String(minutes).split("");
+
+    minutesList.unshift(0);
+
+    minutes = minutesList.join("");
+  }
+
+  if (hours < 10) {
+    hoursList = String(hours).split("");
+
+    hoursList.unshift(0);
+
+    hours = hoursList.join("");
+  }
+
   let currentTime_format = `${date}/${month}/${year} ${hours}:${minutes}`;
   //
 

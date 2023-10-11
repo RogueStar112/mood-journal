@@ -11,11 +11,15 @@
 .mood-tracker {
   display: grid;
   grid-template-columns: 600px 200px;
-  grid-template-rows: 150px 450px 150px;
+  grid-template-rows: 150px 450px 250px;
   grid-auto-flow: column;
   margin: 0 auto;
   max-width: 80%;
   justify-content: center;
+}
+
+.mood-tracker-expanded {
+  grid-template-rows: 150px 450px 600px;
 }
 
 .mood-tracker > * {
