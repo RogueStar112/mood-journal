@@ -1,28 +1,36 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 #author-img {
-  width: 128px;
-  border-radius: 50%;
   border: 2px solid rgba(31, 31, 31, 0.1);
+  border-radius: 50%;
+  width: 128px;
 }
 
 main {
   background-color: #89d197;
   border-radius: 10px;
+  color: #1f1f1f;
+  margin: 0 auto;
+  margin-top: 50px;
   max-width: 1240px;
   padding: 0;
-  margin: 0 auto;
-  color: #1f1f1f;
+  width: 100%;
 }
 
 /* ! Blog header */
 
 .author-info {
-  display: flex;
   align-items: center;
+  background-color: #45b159;
+  border-radius: 10px 10px 0 0;
+  display: flex;
   justify-content: space-between;
   padding: 20px 30px;
   /* margin-bottom: 30px; */
-  background-color: #45b159;
-  border-radius: 10px 10px 0 0;
 }
 
 .author-name {
@@ -78,8 +86,5 @@ main {
 /* ! Footer */
 
 footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  /* z-index: -1; */
+  margin-top: auto;
 }

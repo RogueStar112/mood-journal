@@ -189,17 +189,12 @@ h1 {
 
 #contact-form {
   background-color: #89d197;
+  width: 60%;
 }
 
 #contact-form h2 {
   margin: 20px;
   font-size: 2rem;
-}
-
-#contact-form {
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 #contact-form input {
@@ -237,16 +232,21 @@ h1 {
   text-align: left;
 }
 
+.input-submit {
+  flex-direction: column;
+  display: flex;
+}
 .contact-section {
   text-align: center;
   display: grid;
-  grid-template-columns: 20% 630px auto;
+  grid-template-columns: auto 1240px auto;
 }
 
 #contact-form {
   display: grid;
   grid-column: 2 / 3;
   width: 100%;
+  max-width: 630px;
 }
 
 .input-submit label {
@@ -286,6 +286,7 @@ h1 {
 .form-submit {
   display: flex;
   justify-content: flex-end;
+  width: 600px;
 }
 
 .form-submit button {
