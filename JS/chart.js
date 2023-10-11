@@ -49,7 +49,7 @@ function renderChart() {
         y: {
           // beginAtZero: true,
           min: 1,
-          max: 5,
+          max: 6,
           ticks: {
             stepSize: 1,
           },
