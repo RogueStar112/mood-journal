@@ -1,22 +1,17 @@
-/* colour of breathing circle using green colourscheme */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: #89d197;
-}
 
 audio {
   filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
   width: 300px;
   height: 25px;
   margin: 5px 250px;
+}
+
+/* .breathing-exercise {
+
+} */
+
+.breathing-exercise-off {
+  display:none;
 }
 
 .breathing {
@@ -29,14 +24,18 @@ audio {
   animation: breathe 12s infinite forwards;
 }
 
-.breathing::before {
+.breathing-hidden {
+  display: none;
+}
+
+/* .breathing::before {
   content: "Inhale";
   animation: breathe 6s ease-in-out forwards;
 }
 
 .breathing::after {
   content: " Exhale";
-}
+} */
 
 @keyframes breathe {
   50% {
@@ -47,11 +46,11 @@ audio {
   }
 }
 
-h2 {
+h2 .breathing-header {
   text-align: center;
 }
 
-p {
+p .breathing-p {
   font-size: 1.5rem;
   text-align: center;
 }
