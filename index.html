@@ -15,39 +15,54 @@
     />
     <link rel="stylesheet" href="./CSS/reset.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+    <link rel="stylesheet" href="./CSS/opendyslexic.css" />
     <script
       src="https://kit.fontawesome.com/8b1c90b6bd.js"
       crossorigin="anonymous"
     ></script>
     <script src="./JS/app.js" defer></script>
+    <script src="./JS/mobile-dropdown.js" defer></script>
+    <script src="./JS/opendyslexic.js" defer></script>
     <title>Home | MoodCanvas</title>
   </head>
 
   <body class="theme">
     <header>
       <section class="header-content">
-        <a href="./index.html">
+        <a href="./index.html" id="h1-link">
           <h1><span class="light-text">Mood</span>Canvas</h1>
         </a>
-        <img
-          src="https://place-hold.it/100x50/000/fff"
-          alt="Placeholder Logo"
-        />
+
+        <a href="./index.html">
+          <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
+        </a>
         <nav>
           <ul>
             <li><a href="./mood-tracker.html">Mood Tracker</a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./about.html">About Us</a></li>
+            <li><button id="opendyslexic-btn">OpenDyslexic</button></li>
           </ul>
         </nav>
 
-        <button id="theme">Light/Dark mode</button>
-        <!-- <i class="fa-thin fa-toggle-off"></i>
-        
-          <i class="fa-solid fa-toggle-on"></i>
-        -->
+        <i id="mobile-dropdown-menu" class="fa-solid fa-bars mobile-only"></i>
+      </section>
 
-        <i class="mobile-only fa-solid fa-bars"></i>
+      <section
+        id="mobile-header-content"
+        class="mobile-only mobile-header-content mobile-disabled"
+      >
+        <nav>
+          <ul>
+            <li><a href="./mood-tracker.html">Mood Tracker</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <hr />
+            <li>Accessibility</li>
+            <li><button id="opendyslexic-btn-mobile">OpenDyslexic</button></li>
+          </ul>
+        </nav>
       </section>
     </header>
 
@@ -152,10 +167,7 @@ Enter text here...</textarea
     <footer>
       <section class="footer-content-flex">
         <section class="footer-content">
-          <img
-            src="https://place-hold.it/100x50/000/fff"
-            alt="Placeholder Logo"
-          />
+          <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
           <p>
             &copy; 2023 - <i class="fa-solid fa-code"></i> with
             <i class="fa-solid fa-heart"></i> by Demie M. + Fikret A. + Dom B. +

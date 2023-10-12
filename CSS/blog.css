@@ -86,5 +86,6 @@ main {
 /* ! Footer */
 
 footer {
-  margin-top: auto;
+  /* margin-top: auto; */
+  margin-top: 100px;
 }

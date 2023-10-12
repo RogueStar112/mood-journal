@@ -222,10 +222,23 @@ form textarea {
 
   .header-content {
     justify-content: space-around;
+    padding: 15px 0;
   }
 
-  .header-content img {
+  .header-content a h1,
+  .header-content li a {
     display: none;
+  }
+
+  #h1-link {
+    display: none;
+  }
+
+  /* .header-content img {
+    display: none;
+  } */
+  .header-content img {
+    align-self: flex-start;
   }
 
   .header-content nav {
@@ -255,8 +268,31 @@ form textarea {
     display: none;
   }
 
-  #mobile-header-content {
+  #mobile-dropdown-menu {
+    font-size: 2rem;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .mobile-disabled {
     display: none;
+  }
+
+  #mobile-header-content nav {
+    margin-bottom: 20px;
+  }
+
+  #mobile-header-content nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mobile-header-content nav ul li {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 5px;
   }
 }
 

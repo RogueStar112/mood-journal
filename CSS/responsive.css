@@ -1,0 +1,144 @@
+/* RESPONSIVE CSS: COMMENT OUT IF NECESSARY. */
+/* Created by Demie. 10/10/2023 23:30 */
+
+/* MOBILE */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-content {
+    justify-content: space-around;
+    padding: 15px 0;
+  }
+
+  .header-content a h1,
+  .header-content li a {
+    display: none;
+  }
+
+  #h1-link {
+    display: none;
+  }
+
+  /* .header-content img {
+    display: none;
+  } */
+  .header-content img {
+    align-self: flex-start;
+  }
+
+  .header-content nav {
+    display: none;
+  }
+
+  .mood-tracker {
+    display: flex;
+    max-width: calc(100%) - 20px;
+    flex-direction: column;
+  }
+
+  .quote-decoration {
+    display: none;
+  }
+
+  #typed-text {
+    font-size: 0.8rem;
+  }
+
+  .mood-tracker-quotes {
+    min-height: 36px;
+  }
+
+  .footer-content img,
+  .footer-social {
+    display: none;
+  }
+
+  #mobile-dropdown-menu {
+    font-size: 2rem;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .mobile-disabled {
+    display: none;
+  }
+
+  #mobile-header-content nav {
+    margin-bottom: 20px;
+  }
+
+  #mobile-header-content nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mobile-header-content nav ul li {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  #offer-placeholders {
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+  }
+
+  .hero-text {
+    margin: 20px;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-submit textarea {
+    min-width: 100%;
+    max-width: 400px;
+  }
+
+  .name-email {
+    flex-direction: column;
+  }
+
+  .name-email input {
+    width: 100%;
+  }
+
+  .form-submit {
+    width: initial;
+  }
+
+  .blog-post-header {
+    flex-direction: column;
+  }
+
+  .blog-post-header h3 {
+    font-size: 24px;
+  }
+}
+
+/* TABLET (HORIZONTAL) / DESKTOP */
+@media only screen and (min-width: 769px) {
+  .mobile-only {
+    display: none;
+    --fa-display: none;
+  }
+}
+
+/* !IMPORTANT AREA */
+
+#mood-chart {
+  max-width: 1240px;
+  margin: 0 auto !important;
+}

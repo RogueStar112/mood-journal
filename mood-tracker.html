@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./CSS/mood-tracker.css" />
     <link rel="stylesheet" href="./CSS/footer.css" />
     <link rel="stylesheet" href="./CSS/breathing.css" />
+    <link rel="stylesheet" href="./CSS/opendyslexic.css">
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./JS/scrolling-text.js" defer></script>
@@ -30,6 +31,7 @@
     <script src="./JS/mobile-dropdown.js" defer></script>
     <script src="./JS/chart.js" defer></script>
     <script src="./JS/breathing.js" defer></script>
+    <script src="./JS/opendyslexic.js" defer></script>
 
     <title>App | MoodCanvas</title>
   </head>
@@ -37,13 +39,16 @@
   <body>
     <header>
       <section class="header-content">
-        <a href="./index.html">
+        <a href="./index.html" id="h1-link">
           <h1><span class="light-text">Mood</span>Canvas</h1>
         </a>
-        <img
-          src="https://place-hold.it/100x50/000/fff"
-          alt="Placeholder Logo"
-        />
+
+        <a href="./index.html">
+          <img
+            src="./assets/leaf-logo.png"
+            alt="Placeholder Logo"
+          />
+        </a>
         <nav>
           <ul>
             <li><a href="./mood-tracker.html">Mood Tracker</a></li>
@@ -57,9 +62,15 @@
 
       <section
         id="mobile-header-content"
-        class="mobile-only mobile-header-content /mobile-display"
+        class="mobile-only mobile-header-content mobile-disabled"
       >
-        Test test test
+        <nav>
+          <ul>
+            <li><a href="./mood-tracker.html">Mood Tracker</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./about.html">About Us</a></li>
+          </ul>
+        </nav>
       </section>
     </header>
 
@@ -183,7 +194,7 @@
       <section class="footer-content-flex">
         <section class="footer-content">
           <img
-            src="https://place-hold.it/100x50/000/fff"
+            src="./assets/leaf-logo.png"
             alt="Placeholder Logo"
           />
           <p>
