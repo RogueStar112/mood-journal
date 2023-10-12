@@ -1,99 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./CSS/reset.css" />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/blog.css" />
-    <link rel="stylesheet" href="./CSS/responsive.css" />
-    <link rel="stylesheet" href="./CSS/opendyslexic.css" />
 
-    <script
-      src="https://kit.fontawesome.com/8b1c90b6bd.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./JS/app.js" defer></script>
-    <script src="./JS/blog.js" defer></script>
-    <script src="./JS/mobile-dropdown.js" defer></script>
-    <script src="./JS/opendyslexic.js" defer></script>
-    <title>Blog | MoodCanvas</title>
-    <!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./CSS/reset.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="./CSS/blog.css" />
+  <link rel="stylesheet" href="./CSS/responsive.css" />
+  <link rel="stylesheet" href="./CSS/opendyslexic.css" />
 
-  <body>
-    <header>
-      <section class="header-content">
-        <a href="./index.html" id="h1-link">
-          <h1><span class="light-text">Mood</span>Canvas</h1>
-        </a>
+  <script src="https://kit.fontawesome.com/8b1c90b6bd.js" crossorigin="anonymous"></script>
+  <script src="./JS/app.js" defer></script>
+  <script src="./JS/blog.js" defer></script>
+  <script src="./JS/mobile-dropdown.js" defer></script>
+  <script src="./JS/opendyslexic.js" defer></script>
+  <title>Blog | MoodCanvas</title>
+  <!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+</head>
 
-        <a href="./index.html">
-          <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
-        </a>
-        <nav>
-          <ul>
-            <li><a href="./mood-tracker.html">Mood Tracker</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><button id="opendyslexic-btn">OpenDyslexic</button></li>
-          </ul>
-        </nav>
+<body>
+  <header>
+    <section class="header-content">
+      <a href="./index.html" id="h1-link">
+        <h1><span class="light-text">Mood</span>Canvas</h1>
+      </a>
 
-        <i id="mobile-dropdown-menu" class="fa-solid fa-bars mobile-only"></i>
+      <a href="./index.html">
+        <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="./mood-tracker.html">Mood Tracker</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><button id="opendyslexic-btn">OpenDyslexic</button></li>
+        </ul>
+      </nav>
+
+      <i id="mobile-dropdown-menu" class="fa-solid fa-bars mobile-only"></i>
+    </section>
+
+    <section id="mobile-header-content" class="mobile-only mobile-header-content mobile-disabled">
+      <nav>
+        <ul>
+          <li><a href="./mood-tracker.html">Mood Tracker</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li>Accessibility</li>
+          <li><button id="opendyslexic-btn-mobile">OpenDyslexic</button></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section class="author-info">
+      <img src="./assets/author.png" alt="" id="author-img" />
+      <h2 class="author-name">Christopher S. Hamby</h2>
+    </section>
+
+    <section id="blog-posts-container" class="blog-posts-container"></section>
+  </main>
+
+  <footer id="footer">
+    <section class="footer-content-flex">
+      <section class="footer-content">
+        <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
+        <p>
+          &copy; 2023 - <i class="fa-solid fa-code"></i> with
+          <i class="fa-solid fa-heart"></i> by Demie M. + Fikret A. + Dom B. +
+          Tyler A.
+        </p>
       </section>
-
-      <section
-        id="mobile-header-content"
-        class="mobile-only mobile-header-content mobile-disabled"
-      >
-        <nav>
-          <ul>
-            <li><a href="./mood-tracker.html">Mood Tracker</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <hr />
-            <li>Accessibility</li>
-            <li><button id="opendyslexic-btn-mobile">OpenDyslexic</button></li>
-          </ul>
-        </nav>
+      <section class="footer-social">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-discord"></i>
       </section>
-    </header>
+    </section>
+  </footer>
+</body>
 
-    <main>
-      <section class="author-info">
-        <img src="./assets/author.png" alt="" id="author-img" />
-        <h2 class="author-name">Christopher S. Hamby</h2>
-      </section>
-
-      <section id="blog-posts-container" class="blog-posts-container"></section>
-    </main>
-
-    <footer id="footer">
-      <section class="footer-content-flex">
-        <section class="footer-content">
-          <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
-          <p>
-            &copy; 2023 - <i class="fa-solid fa-code"></i> with
-            <i class="fa-solid fa-heart"></i> by Demie M. + Fikret A. + Dom B. +
-            Tyler A.
-          </p>
-        </section>
-        <section class="footer-social">
-          <i class="fa-brands fa-github"></i>
-          <i class="fa-brands fa-discord"></i>
-        </section>
-      </section>
-    </footer>
-  </body>
 </html>

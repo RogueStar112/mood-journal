@@ -256,9 +256,6 @@ form textarea {
     display: none;
   }
 
-  /* .header-content img {
-    display: none;
-  } */
   .header-content img {
     align-self: flex-start;
   }

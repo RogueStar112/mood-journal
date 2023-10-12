@@ -31,7 +31,6 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 20px 30px;
-  /* margin-bottom: 30px; */
 }
 
 .author-name {
@@ -57,7 +56,7 @@ main {
   max-width: 85%;
   margin: 20px auto;
   padding-bottom: 10px;
-  text-align: justify;
+  word-wrap: break-word;
 }
 
 .blog-post:last-child {
