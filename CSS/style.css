@@ -48,7 +48,6 @@ header {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 4%;
 }
 
 nav ul {
@@ -96,6 +95,9 @@ h1 {
 
 .hero {
   background-color: #89d197;
+  max-width: 1240px;
+  margin: 4rem auto;
+  border-radius: 10px;
 }
 
 .hero-container {
@@ -106,7 +108,7 @@ h1 {
 }
 
 .hero-text {
-  padding: 20px 20px 20px 0;
+  padding: 2rem;
   max-width: 600px;
   position: relative;
   top: 135px;
@@ -133,6 +135,13 @@ h1 {
 .contact-section {
   background-color: #89d197;
   color: #1f1f1f;
+}
+
+.offers {
+  max-width: 1240px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 0 2rem;
 }
 
 #offer-h2 {
@@ -170,14 +179,21 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 1fr;
   max-width: 1240px;
-  margin: 4% auto;
+  margin: 4rem auto;
   padding: 20px 0;
   grid-auto-flow: column;
 }
 
 .contact-section {
-  margin: 4% auto;
   padding: 20px;
+  background-color: #89d197;
+  color: #1f1f1f;
+  max-width: 1240px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto 1240px auto;
 }
 
 #offer-placeholders,
@@ -189,7 +205,10 @@ h1 {
 
 #contact-form {
   background-color: #89d197;
-  width: 60%;
+  display: grid;
+  grid-column: 2 / 3;
+  max-width: 630px;
+  padding: 0 1rem;
 }
 
 #contact-form h2 {
@@ -235,18 +254,6 @@ h1 {
 .input-submit {
   flex-direction: column;
   display: flex;
-}
-.contact-section {
-  text-align: center;
-  display: grid;
-  grid-template-columns: auto 1240px auto;
-}
-
-#contact-form {
-  display: grid;
-  grid-column: 2 / 3;
-  width: 100%;
-  max-width: 630px;
 }
 
 .input-submit label {

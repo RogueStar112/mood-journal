@@ -2,10 +2,15 @@
   text-align: center;
   background-color: #89d197;
   padding: 20px 16px;
+  max-width: 1240px;
+  margin: 4rem auto;
+  border-radius: 10px;
 }
 
 .mood-tracker-container {
-  margin-bottom: 4%;
+  max-width: 1240px;
+  margin: 4rem auto;
+  border-radius: 10px;
 }
 
 .mood-tracker {
@@ -297,8 +302,8 @@ form textarea {
 }
 
 #mood-chart {
-  max-width: 1240px;
-  margin: 0 auto !important;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 /* TABLET (HORIZONTAL) / DESKTOP */
