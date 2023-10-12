@@ -47,7 +47,6 @@ function renderChart() {
       },
       scales: {
         y: {
-          // beginAtZero: true,
           min: 1,
           max: 6,
           ticks: {

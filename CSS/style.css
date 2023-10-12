@@ -1,7 +1,3 @@
-/* Hero image by David Marcu on Unsplash -> https://unsplash.com/photos/78A265wPiO4  */
-
-/* generic content width is typically around 860 - 900px wide for readability depending on font-sizes. 1140 - 1240 is typically our max-width rows for columns, or other blocks like header/footer content. */
-
 * {
   box-sizing: border-box;
   text-decoration: none;

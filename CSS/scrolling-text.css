@@ -1,16 +1,3 @@
-/* body {
-  width: 100vw;
-  height: 100vh;
-  font-family: "Courier New", Courier, monospace;
-}
-
-main {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-} */
-
 @keyframes breathe {
   0% {
     opacity: 1;

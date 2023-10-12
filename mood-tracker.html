@@ -1,220 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/8b1c90b6bd.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./CSS/reset.css" />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/scrolling-text.css" />
-    <link rel="stylesheet" href="./CSS/mood-tracker.css" />
-    <link rel="stylesheet" href="./CSS/footer.css" />
-    <link rel="stylesheet" href="./CSS/breathing.css" />
-    <link rel="stylesheet" href="./CSS/opendyslexic.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./JS/scrolling-text.js" defer></script>
-    <script src="./JS/mood-tracker-form.js" defer></script>
-    <script src="./JS/mobile-dropdown.js" defer></script>
-    <script src="./JS/chart.js" defer></script>
-    <script src="./JS/breathing.js" defer></script>
-    <script src="./JS/opendyslexic.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/8b1c90b6bd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./CSS/reset.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="./CSS/scrolling-text.css" />
+  <link rel="stylesheet" href="./CSS/mood-tracker.css" />
+  <link rel="stylesheet" href="./CSS/footer.css" />
+  <link rel="stylesheet" href="./CSS/breathing.css" />
+  <link rel="stylesheet" href="./CSS/opendyslexic.css">
 
-    <title>App | MoodCanvas</title>
-  </head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./JS/scrolling-text.js" defer></script>
+  <script src="./JS/mood-tracker-form.js" defer></script>
+  <script src="./JS/mobile-dropdown.js" defer></script>
+  <script src="./JS/chart.js" defer></script>
+  <script src="./JS/breathing.js" defer></script>
+  <script src="./JS/opendyslexic.js" defer></script>
 
-  <body>
-    <header>
-      <section class="header-content">
-        <a href="./index.html" id="h1-link">
-          <h1><span class="light-text">Mood</span>Canvas</h1>
-        </a>
+  <title>App | MoodCanvas</title>
+</head>
 
-        <a href="./index.html">
-          <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
-        </a>
-        <nav>
-          <ul>
-            <li><a href="./mood-tracker.html">Mood Tracker</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><button id="opendyslexic-btn">OpenDyslexic</button></li>
-          </ul>
-        </nav>
+<body>
+  <header>
+    <section class="header-content">
+      <a href="./index.html" id="h1-link">
+        <h1><span class="light-text">Mood</span>Canvas</h1>
+      </a>
 
-        <i id="mobile-dropdown-menu" class="fa-solid fa-bars mobile-only"></i>
-      </section>
+      <a href="./index.html">
+        <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="./mood-tracker.html">Mood Tracker</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><button id="opendyslexic-btn">OpenDyslexic</button></li>
+        </ul>
+      </nav>
 
-      <section
-        id="mobile-header-content"
-        class="mobile-only mobile-header-content mobile-disabled"
-      >
-        <nav>
-          <ul>
-            <li><a href="./mood-tracker.html">Mood Tracker</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <hr />
-            <li>Accessibility</li>
-            <li><button id="opendyslexic-btn-mobile">OpenDyslexic</button></li>
-          </ul>
-        </nav>
-      </section>
-    </header>
+      <i id="mobile-dropdown-menu" class="fa-solid fa-bars mobile-only"></i>
+    </section>
 
-    <main>
-      <section class="segment mood-tracker-container font-ar-sans">
-        <form id="mood-tracker-form" class="mood-tracker">
-          <section class="mood-tracker-quotes">
-            <span class="quote-decoration" id="quote-char-upside">“</span>
-            <span class="quote-decoration" id="quote-char-upside-down">”</span>
-            <section id="typed-text">
-              With great power, comes great responsibility<span
-                id="typing-underscore"
-                >_</span
-              >
-              <section id="typed-author">- Spiderman</section>
-            </section>
+    <section id="mobile-header-content" class="mobile-only mobile-header-content mobile-disabled">
+      <nav>
+        <ul>
+          <li><a href="./mood-tracker.html">Mood Tracker</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <hr />
+          <li>Accessibility</li>
+          <li><button id="opendyslexic-btn-mobile">OpenDyslexic</button></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section class="segment mood-tracker-container font-ar-sans">
+      <form id="mood-tracker-form" class="mood-tracker">
+        <section class="mood-tracker-quotes">
+          <span class="quote-decoration" id="quote-char-upside">“</span>
+          <span class="quote-decoration" id="quote-char-upside-down">”</span>
+          <section id="typed-text">
+            With great power, comes great responsibility<span id="typing-underscore">_</span>
+            <section id="typed-author">- Spiderman</section>
+          </section>
+        </section>
+
+        <section class="mood-tracker-questionnaire">
+          <p>Questionnaire</p>
+          <section id="form-questionnaire">
+            <label for="questionnaire-text-title">Give a brief title</label>
+            <textarea id="questionnaire-text-title" name="questionnaire-text-title"
+              placeholder="Feeling good / Not feeling great" required></textarea>
           </section>
 
-          <section class="mood-tracker-questionnaire">
-            <p>Questionnaire</p>
-            <section id="form-questionnaire">
-              <label for="questionnaire-text-title">Give a brief title</label>
-              <textarea
-                id="questionnaire-text-title"
-                name="questionnaire-text-title"
-                placeholder="Feeling good / Not feeling great"
-                required
-              ></textarea>
-            </section>
-
-            <section id="form-questionnaire-q2">
-              <label for="questionnaire-text">How are you feeling today?</label>
-              <textarea
-                id="questionnaire-text"
-                name="questionnaire-text"
-                placeholder="I'm feeling..."
-                required
-              ></textarea>
-            </section>
-
-            <section id="status-text">
-              <p>Your <a href="blog.html">post</a> has been submitted.</p>
-            </section>
+          <section id="form-questionnaire-q2">
+            <label for="questionnaire-text">How are you feeling today?</label>
+            <textarea id="questionnaire-text" name="questionnaire-text" placeholder="I'm feeling..."
+              required></textarea>
           </section>
 
-          <section class="mood-tracker-rating">
-            <!-- <p>Rating</p> -->
+          <section id="status-text">
+            <p id="submit-success" class="hidden"><i class="fa-solid fa-check"></i> Your <a href="blog.html">post</a>
+              has been
+              submitted.</p>
+          </section>
+        </section>
 
-            <p>How do you rate your current day on a scale of 1-5?</p>
+        <section class="mood-tracker-rating">
+          <!-- <p>Rating</p> -->
 
-            <section id="form-rating">
-              <div class="rating-container">
-                <input type="radio" id="rating_1" name="rating" value="1" />
-                <label for="rating_1">1 😭</label>
-              </div>
+          <p>How do you rate your current day on a scale of 1-5?</p>
 
-              <div class="rating-container">
-                <input type="radio" id="rating_2" name="rating" value="2" />
-                <label for="rating_2">2 😔</label>
-              </div>
+          <section id="form-rating">
+            <div class="rating-container">
+              <input type="radio" id="rating_1" name="rating" value="1" />
+              <label for="rating_1">1 😭</label>
+            </div>
 
-              <div class="rating-container">
-                <input type="radio" id="rating_3" name="rating" value="3" />
-                <label for="rating_3">3 😐</label>
-              </div>
+            <div class="rating-container">
+              <input type="radio" id="rating_2" name="rating" value="2" />
+              <label for="rating_2">2 😔</label>
+            </div>
 
-              <div class="rating-container">
-                <input type="radio" id="rating_4" name="rating" value="4" />
-                <label for="rating_4">4 🙂</label>
-              </div>
+            <div class="rating-container">
+              <input type="radio" id="rating_3" name="rating" value="3" />
+              <label for="rating_3">3 😐</label>
+            </div>
 
-              <div class="rating-container">
-                <input type="radio" id="rating_5" name="rating" value="5" />
-                <label for="rating_5">5 😃</label>
-              </div>
-            </section>
+            <div class="rating-container">
+              <input type="radio" id="rating_4" name="rating" value="4" />
+              <label for="rating_4">4 🙂</label>
+            </div>
 
-            <button type="submit" id="form-submit">Submit</button>
+            <div class="rating-container">
+              <input type="radio" id="rating_5" name="rating" value="5" />
+              <label for="rating_5">5 😃</label>
+            </div>
           </section>
 
-          <section class="mood-tracker-help">
+          <button type="submit" id="form-submit">Submit</button>
+        </section>
 
-            <p>Help</p>
+        <section class="mood-tracker-help">
+
           <button type="button" class="breathing-exercise" id="breathe">
             Breathe
           </button>
           <section class="breathing-exercise">
             <h2 class="breathing-header">Focused Breathing</h2>
-              <section>
-                <p class="breathing-p">
-                  Breathe through your nose for 4 seconds <br />
-                  Hold for 4 seconds, and then release through the mouth for 4
-                  seconds.
-                  <br />
-                  Repeat as needed.
-                </p>
-              </section>
+            <section>
+              <p class="breathing-p">
+                Breathe through your nose for 4 seconds <br />
+                Hold for 4 seconds, and then release through the mouth for 4
+                seconds.
+                <br />
+                Repeat as needed.
+              </p>
+            </section>
             <div class="breathing breathing-hidden" id="breathing-circle"></div>
-              <audio
-                controls
-                src="./assets/please-calm-my-mind-125566.mp3"
-                type="audio"
-              ></audio>
+            <audio controls src="./assets/please-calm-my-mind-125566.mp3" type="audio"></audio>
 
 
           </section>
-            </div>
-            <div><h2 class="breathing-header"></h2></div>
-          </section>
-        </form>
-        <section class="mood-tracker-help">
-          
+          </div>
+          <div>
+            <h2 class="breathing-header"></h2>
+          </div>
         </section>
-      </section>
+      </form>
+      <section class="mood-tracker-help">
 
-      <section class="chart-area segment font-ar-sans">
-        <canvas id="mood-chart"></canvas>
       </section>
-    </main>
-    <footer>
-      <section class="footer-content-flex">
-        <section class="footer-content">
-          <img
-            src="./assets/leaf-logo.png"
-            alt="Placeholder Logo"
-          />
-          <p>
-            &copy; 2023 - <i class="fa-solid fa-code"></i> with
-            <i class="fa-solid fa-heart"></i> by Demie M. + Fikret A. + Dom B. +
-            Tyler A.
-          </p>
-        </section>
-        <section class="footer-social">
-          <a href="https://github.com/RogueStar112/mood-journal" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://youtu.be/dQw4w9WgXcQ?si=Lz2Pz09BqmnrzVh5"
-            target="_blank"
-            ><i class="fa-brands fa-discord"></i
-          ></a>
-        </section>
+    </section>
+
+    <section class="chart-area segment font-ar-sans">
+      <canvas id="mood-chart"></canvas>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-content-flex">
+      <section class="footer-content">
+        <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
+        <p>
+          &copy; 2023 - <i class="fa-solid fa-code"></i> with
+          <i class="fa-solid fa-heart"></i> by Demie M. + Fikret A. + Dom B. +
+          Tyler A.
+        </p>
       </section>
-    </footer>
-  </body>
+      <section class="footer-social">
+        <a href="https://github.com/RogueStar112/mood-journal" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=Lz2Pz09BqmnrzVh5" target="_blank"><i
+            class="fa-brands fa-discord"></i></a>
+      </section>
+    </section>
+  </footer>
+</body>
+
 </html>

@@ -1,5 +1,6 @@
 const formSubmitBtn = document.getElementById("form-submit");
 const moodTrackerForm = document.getElementById("mood-tracker-form");
+const submitMsg = document.getElementById("submit-success");
 
 /* 
 
@@ -60,6 +61,9 @@ formSubmitBtn.addEventListener("click", function (e) {
   entries_JSON = JSON.stringify(entries);
 
   localStorage.setItem("entries", entries_JSON);
+
+  // submit text appears
+  submitMsg.classList.toggle("hidden");
 });
 
 // const formQuestionnaire = document.getElementById("form-questionnaire");
