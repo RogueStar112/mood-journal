@@ -126,6 +126,14 @@
   .blog-post-header h3 {
     font-size: 24px;
   }
+
+  .square-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: auto;
+    height: auto;
+  }
 }
 
 /* TABLET (HORIZONTAL) / DESKTOP */
