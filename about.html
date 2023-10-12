@@ -1,131 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="./CSS/about.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+    <link rel="stylesheet" href="./CSS/opendyslexic.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./CSS/reset.css" />
-  <link rel="stylesheet" href="./CSS/style.css" />
-  <link rel="stylesheet" href="./CSS/footer.css" />
-  <link rel="stylesheet" href="./CSS/about.css" />
-  <link rel="stylesheet" href="./CSS/responsive.css" />
-  <link rel="stylesheet" href="./CSS/opendyslexic.css" />
+    <script
+      src="https://kit.fontawesome.com/8b1c90b6bd.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/8b1c90b6bd.js" crossorigin="anonymous"></script>
+    <script src="./JS/mobile-dropdown.js" defer></script>
+    <script src="./JS/opendyslexic.js" defer></script>
 
-  <script src="./JS/mobile-dropdown.js" defer></script>
-  <script src="./JS/opendyslexic.js" defer></script>
+    <title>About Us</title>
+  </head>
 
-  <title>About Us</title>
-</head>
+  <body>
+    <header>
+      <section class="header-content">
+        <a href="./index.html" id="h1-link">
+          <h1><span class="light-text">Mood</span>Canvas</h1>
+        </a>
 
-<body>
-  <header>
-    <section class="header-content">
-      <a href="./index.html" id="h1-link">
-        <h1><span class="light-text">Mood</span>Canvas</h1>
-      </a>
+        <a href="./index.html">
+          <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="./mood-tracker.html">Mood Tracker</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><button id="opendyslexic-btn">OpenDyslexic</button></li>
+          </ul>
+        </nav>
 
-      <a href="./index.html">
-        <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="./mood-tracker.html">Mood Tracker</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./about.html">About Us</a></li>
-          <li><button id="opendyslexic-btn">OpenDyslexic</button></li>
-        </ul>
-      </nav>
-
-      <i id="mobile-dropdown-menu" class="fa-solid fa-bars mobile-only"></i>
-    </section>
-
-    <section id="mobile-header-content" class="mobile-only mobile-header-content mobile-disabled">
-      <nav>
-        <ul>
-          <li><a href="./mood-tracker.html">Mood Tracker</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./about.html">About Us</a></li>
-          <li>Accessibility</li>
-          <li><button id="opendyslexic-btn-mobile">OpenDyslexic</button></li>
-        </ul>
-      </nav>
-    </section>
-  </header>
-  <main>
-    <div class="square-container">
-      <div class="item">
-        <h3>Demie, M.</h3>
-        <p>
-          At the heart of our project, Demie serves as the guiding force
-          behind the JavaScript functionality, shaping the very essence of our
-          mood journaling experience. With a profound understanding of code
-          and an innate ability to translate ideas into functional features,
-          Demie takes on the role of a digital architect, constructing the
-          framework that underpins the entire platform. They meticulously
-          craft the user interface, ensuring a seamless and intuitive
-          experience for our users.
-        </p>
-        <img class="hover-image" src="/assets/demie.png" alt="Image Description" />
-      </div>
-      <div class="item">
-        <h3>Dom, B.</h3>
-        <p>
-          In this dynamic team, the roles of Chief Animator, Content Advisor,
-          and Morale Captain play critical and complementary functions in
-          ensuring the creative and emotional well-being of our group. Dom has
-          a keen eye for visual storytelling and a knack for bringing ideas to
-          life, injects vibrancy and life into our projects, making them
-          engaging and relatable.
-        </p>
-        <img class="hover-image" src="/assets/dom.jpg" alt="Image Description" />
-      </div>
-      <div class="item">
-        <h3>Fikret, A.</h3>
-        <p>
-          Fikret is the creative mastermind responsible for the multifaceted
-          domains of website development, styling, and marketing. With a keen
-          eye for aesthetics and an innate talent for coding, they breathe
-          life into digital spaces, crafting visually captivating and
-          user-friendly websites that leave a lasting impression.
-        </p>
-        <img class="hover-image" src="/assets/fikret.jpg" alt="Image Description" />
-      </div>
-      <div class="item">
-        <h3>Tyler, A.</h3>
-        <p>
-          Tyler is a dynamic individual with a diverse range of passions that
-          reflect a true Renaissance spirit. With an insatiable curiosity for
-          the world of technology, Tyler is a skilled coder and a fervent
-          advocate for cybersecurity, constantly seeking to protect and
-          innovate within the digital realm. Beyond the virtual world, they
-          are equally passionate about the physical realm, with a deep
-          appreciation for motorcycles and cars.
-        </p>
-        <img class="hover-image" src="/assets/tyler.jpg" alt="Image Description" />
-      </div>
-    </div>
-  </main>
-  <footer>
-    <section class="footer-content-flex">
-      <section class="footer-content">
-        <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
-        <p>
-          &copy; 2023 - <i class="fa-solid fa-code"></i> with
-          <i class="fa-solid fa-heart"></i> by Demie M. + Fikret A. + Dom B. +
-          Tyler A.
-        </p>
+        <i id="mobile-dropdown-menu" class="fa-solid fa-bars mobile-only"></i>
       </section>
-      <section class="footer-social">
-        <a href="https://github.com/RogueStar112/mood-journal" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://youtu.be/dQw4w9WgXcQ?si=Lz2Pz09BqmnrzVh5" target="_blank"><i
-            class="fa-brands fa-discord"></i></a>
-      </section>
-    </section>
-  </footer>
-</body>
 
+      <section
+        id="mobile-header-content"
+        class="mobile-only mobile-header-content mobile-disabled"
+      >
+        <nav>
+          <ul>
+            <li><a href="./mood-tracker.html">Mood Tracker</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li>Accessibility</li>
+            <li><button id="opendyslexic-btn-mobile">OpenDyslexic</button></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <div class="square-container">
+        <div class="item">
+          <h3>Demie, M.</h3>
+          <p>
+            At the heart of our project, Demie serves as the guiding force
+            behind the JavaScript functionality, shaping the very essence of our
+            mood journaling experience. With a profound understanding of code
+            and an innate ability to translate ideas into functional features,
+            Demie takes on the role of a digital architect, constructing the
+            framework that underpins the entire platform. They meticulously
+            craft the user interface, ensuring a seamless and intuitive
+            experience for our users.
+          </p>
+          <img
+            class="hover-image"
+            src="./assets/demie.png"
+            alt="Image Description"
+          />
+        </div>
+        <div class="item">
+          <h3>Dom, B.</h3>
+          <p>
+            In this dynamic team, the roles of Chief Animator, Content Advisor,
+            and Morale Captain play critical and complementary functions in
+            ensuring the creative and emotional well-being of our group. Dom has
+            a keen eye for visual storytelling and a knack for bringing ideas to
+            life, injects vibrancy and life into our projects, making them
+            engaging and relatable.
+          </p>
+          <img
+            class="hover-image"
+            src="./assets/dom.jpg"
+            alt="Image Description"
+          />
+        </div>
+        <div class="item">
+          <h3>Fikret, A.</h3>
+          <p>
+            Fikret is the creative mastermind responsible for the multifaceted
+            domains of website development, styling, and marketing. With a keen
+            eye for aesthetics and an innate talent for coding, they breathe
+            life into digital spaces, crafting visually captivating and
+            user-friendly websites that leave a lasting impression.
+          </p>
+          <img
+            class="hover-image"
+            src="./assets/fikret.jpg"
+            alt="Image Description"
+          />
+        </div>
+        <div class="item">
+          <h3>Tyler, A.</h3>
+          <p>
+            Tyler is a dynamic individual with a diverse range of passions that
+            reflect a true Renaissance spirit. With an insatiable curiosity for
+            the world of technology, Tyler is a skilled coder and a fervent
+            advocate for cybersecurity, constantly seeking to protect and
+            innovate within the digital realm. Beyond the virtual world, they
+            are equally passionate about the physical realm, with a deep
+            appreciation for motorcycles and cars.
+          </p>
+          <img
+            class="hover-image"
+            src="./assets/tyler.jpg"
+            alt="Image Description"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-content-flex">
+        <section class="footer-content">
+          <img src="./assets/leaf-logo.png" alt="Placeholder Logo" />
+          <p>
+            &copy; 2023 - <i class="fa-solid fa-code"></i> with
+            <i class="fa-solid fa-heart"></i> by Demie M. + Fikret A. + Dom B. +
+            Tyler A.
+          </p>
+        </section>
+        <section class="footer-social">
+          <a href="https://github.com/RogueStar112/mood-journal" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://youtu.be/dQw4w9WgXcQ?si=Lz2Pz09BqmnrzVh5"
+            target="_blank"
+            ><i class="fa-brands fa-discord"></i
+          ></a>
+        </section>
+      </section>
+    </footer>
+  </body>
 </html>
