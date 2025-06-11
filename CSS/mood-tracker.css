@@ -168,24 +168,25 @@ form textarea {
 }
 
 .mood-tracker-quotes {
-  position: relative;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    position: relative;
+ }
+
+#typed-text {
+  margin: auto 0;
+  flex-grow: 1;
 }
+
 
 .quote-decoration {
-  position: absolute;
+  /* position: absolute; */
   font-size: 8rem;
   opacity: 0.5;
+  margin: 10px;
 }
 
-#quote-char-upside {
-  left: 20px;
-}
-
-#quote-char-upside-down {
-  right: 20px;
-  bottom: 0px;
-  line-height: 0px;
-}
 
 .mood-tracker-questionnaire {
   overflow: hidden;
@@ -257,7 +258,7 @@ form textarea {
   }
 
   .header-content img {
-    align-self: flex-start;
+    cursor: pointer;
   }
 
   .header-content nav {
@@ -270,17 +271,20 @@ form textarea {
     flex-direction: column;
   }
 
-  .quote-decoration {
-    display: none;
-  }
 
   #typed-text {
     font-size: 0.8rem;
   }
 
-  .mood-tracker-quotes {
+  /* .mood-tracker-quotes {
     min-height: 36px;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  } */
+
+  
 
   .footer-content img,
   .footer-social {

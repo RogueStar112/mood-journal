@@ -22,7 +22,7 @@
   }
 
   .header-content img {
-    align-self: flex-start;
+    cursor: pointer;
   }
 
   .header-content nav {

@@ -17,4 +17,8 @@ An app that allows you to track your mood with a questionnaire and it displays y
 
 ### Version
 
-v0.1
+v0.11a - Quality of Life changes by Demie M. (Updated 11/06/2025)
+
+### Credit images:
+
+[Hamburger icon](https://www.flaticon.com/free-icon/settings_13958298?term=dropdown+menu&page=1&position=5&origin=search&related_id=13958298)
